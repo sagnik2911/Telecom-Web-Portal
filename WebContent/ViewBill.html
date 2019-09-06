@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>View Bill</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 516px;
+	top: 393px;
+	width: 274px;
+	height: 38px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	left: 758px;
+	top: 356px;
+	width: 239px;
+	height: 33px;
+	z-index: 2;
+}
+#apDiv3 {
+	position: absolute;
+	left: 615px;
+	top: 393px;
+	width: 229px;
+	height: 39px;
+	z-index: 2;
+}
+#apDiv4 {
+	position: absolute;
+	left: 517px;
+	top: 449px;
+	width: 276px;
+	height: 38px;
+	z-index: 3;
+}
+#apDiv5 {
+	position: absolute;
+	left: 612px;
+	top: 450px;
+	width: 232px;
+	height: 38px;
+	z-index: 4;
+}
+#apDiv6 {
+	position: absolute;
+	left: 350px;
+	top: 254px;
+	width: 692px;
+	height: 76px;
+	z-index: 5;
+}
+#apDiv1 {
+	color: #C60;
+	font-weight: bold;
+	text-align: left;
+}
+#apDiv4 {
+	font-weight: bold;
+	color: #C60;
+}
+#apDiv6 h1 {
+	color: #C60;
+}
+#apDiv7 {
+	position: absolute;
+	left: 626px;
+	top: 511px;
+	width: 119px;
+	height: 49px;
+	z-index: 6;
+}
+#apDiv8 {
+	position: absolute;
+	left: 14px;
+	top: 651px;
+	width: 1302px;
+	height: 163px;
+	z-index: 7;
+	background-image: url(Images/footer_background.jpg);
+}
+.jh {
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+function check()
+{
+  ph = document.f1.t1.value;
+  pwd = document.f1.t2.value;
+  if(ph == "")
+  {
+  alert("Enter Mobile Number");
+  document.f1.t1.focus();
+  }
+  else if(isNaN(ph)||ph.length!=10)
+  {
+  alert("Enter Proper Mobile Number");
+  document.f1.t1.focus();
+  }
+  else if(pwd == "")
+  {
+  alert("Enter Password");
+  document.f1.t2.focus();
+  }
+  else
+  {
+  document.f1.submit();
+  }
+}
+</script>
+</head>
+<body>
+<form name="f1" action="Viewbill.jsp" method="post">
+<div id="apDiv1">Phone No----&gt;</div>
+<div id="apDiv3">
+  <label for="t1"></label>
+  <input type="text" name="t1" id="t1" maxlength="10">
+</div>
+<div id="apDiv4">Password---&gt;</div>
+<div id="apDiv5">
+  <label for="t2"></label>
+  <label for="t3"></label>
+  <input type="password" name="t2" id="t3">
+</div>
+<div id="apDiv7"><input type="image" src="Images/orange-submit-button-png-i0.png" width="120" height="50" title="Submit" onClick = "check();return false;"></div>
+</form>
+<div id="apDiv6">
+  <h1 align="center">Please enter Ph no. &amp; password</h1>
+</div>
+
+
+<div id="apDiv8">
+ <center> <p>&nbsp;</p>
+   <p>Tata is a registered trademark of Tata Sons Ltd. The DOCOMO logo is a trademark  of NTT DOCOMO, INC. (Japan) in India.<br>
+     &copy;&nbsp;2015 Tata DOCOMO | Powered by&nbsp;iem<br>
+     Follow us @ facebook and twitter<br>
+     Best 3G mobile phones, 3G data card, 3G services in India from Tata  DOCOMO. Enjoy Tata DOCOMO 3G Services in India with best<br>
+    3G mobile phone and 3G data card.</p>
+ </center>
+</div>
+<table width="1193" height="642" border="0">
+  <tr>
+    <td width="341" height="203"><img src="Images/unnamed.jpg" width="341" height="163"></td>
+    <td colspan="2"><img src="Images/Tata-Docomo-price.jpg" width="889" height="167"></td>
+  </tr>
+  <tr>
+    <td height="93"><a href="Cust_Home.jsp"><img src="Images/OTHER_SERVICES.png" title="Home" width="103" height="72"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="Logout.jsp"><img src="Images/400_F_43356582_xppel8dOjSjki2KLbunQA1TdIeCl7z9v.jpg" title="Logout" width="94" height="90" class="jh"></a></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><img src="Images/ranbir-kapoor-tata-docomo-ad-new.jpg" width="318" height="283"></td>
+    <td width="724">&nbsp;</td>
+    <td width="106">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><img src="Images/ad3.jpg" width="177" height="302"></td>
+  </tr>
+</table>
+</body>
+</html>

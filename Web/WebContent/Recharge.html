@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Online Prepaid Recharge</title>
+<script >
+function check()
+{
+mn = document.form1.t1.value;
+rec = document.form1.t2.value;
+if (mn=="")
+	{
+	alert("Enter Mobile Number");
+	document.form1.t1.focus();
+	}
+else if(isNaN(mn)||mn.length!=10)
+	{
+	alert("Enter proper mobile number");
+	document.form1.t1.focus();	
+	}
+else if (rec=="")
+	{
+	alert("Enter Recharge Amount");
+	document.form1.t2.focus();
+	}
+else if(isNaN(rec))
+	{
+	alert("Enter proper Recharge amount");
+	document.form1.t2.focus();	
+	}
+else if(rec<10)
+{
+alert("Amount must be greater than 10");
+document.form1.t2.focus();	
+}	
+else
+{
+document.form1.submit();
+}
+
+}
+</script>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 109px;
+	top: 327px;
+	width: 1119px;
+	height: 58px;
+	z-index: 1;
+	font-size: xx-large;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #F60;
+	text-decoration: none;
+}
+#apDiv2 {
+	position: absolute;
+	left: 110px;
+	top: 400px;
+	width: 1118px;
+	height: 45px;
+	z-index: 2;
+	font-style: normal;
+	color: #C60;
+	font-weight: bold;
+}
+#apDiv3 {
+	position: absolute;
+	left: 100px;
+	top: 716px;
+	width: 1154px;
+	height: 161px;
+	z-index: 3;
+	background-image: url(Images/footer_background.jpg);
+}
+#apDiv4 {
+	position: absolute;
+	left: 170px;
+	top: 473px;
+	width: 314px;
+	height: 30px;
+	z-index: 4;
+	font-size: large;
+	color: #F60;
+	font-weight: bold;
+	text-align: justify;
+}
+#apDiv5 {
+	position: absolute;
+	left: 493px;
+	top: 473px;
+	width: 213px;
+	height: 28px;
+	z-index: 5;
+}
+#apDiv6 {
+	position: absolute;
+	left: 827px;
+	top: 463px;
+	width: 401px;
+	height: 222px;
+	z-index: 6;
+}
+#apDiv7 {
+	position: absolute;
+	left: 490px;
+	top: 553px;
+	width: 218px;
+	height: 74px;
+	z-index: 7;
+}
+#apDiv8 {
+	position: absolute;
+	left: 170px;
+	top: 514px;
+	width: 233px;
+	height: 27px;
+	z-index: 8;
+	font-size: large;
+	color: #F60;
+	font-weight: bold;
+}
+#apDiv9 {
+	position: absolute;
+	left: 493px;
+	top: 510px;
+	width: 214px;
+	height: 27px;
+	z-index: 9;
+}
+.abc {
+	text-align: justify;
+}
+</style>
+</head>
+<body>
+<div id="apDiv1"> &nbsp;Online Recharge</div>
+<div id="apDiv2" align="center"><marquee scrolldelay="120">Recharging was never this quick and easy!Just enter your 10-digit Docomo number and your recharge amount to get started.</marquee></div>
+<div id="apDiv3">
+ <center> <p>&nbsp;</p>
+   <p>Tata is a registered trademark of Tata Sons Ltd. The DOCOMO logo is a trademark  of NTT DOCOMO, INC. (Japan) in India.<br>
+     &copy;&nbsp;2015 Tata DOCOMO | Powered by&nbsp;iem<br>
+     Follow us @ facebook and twitter<br>
+     Best 3G mobile phones, 3G data card, 3G services in India from Tata  DOCOMO. Enjoy Tata DOCOMO 3G Services in India with best<br>
+    3G mobile phone and 3G data card.</p>
+ </center>
+</div>
+<div id="apDiv4">
+  <div>Enter your 10-Digit Docomo Number:</div>
+</div>
+
+<div id="apDiv6">
+  <div align="center"><img src="Images/2.jpg" width="400" height="220"></div>
+</div>
+
+<div id="apDiv8">
+  <div>Enter Recharging amount:</div>
+</div>
+
+<form action="Recharge.jsp" method="post" name="form1">
+<div id="apDiv5">
+  <label for="t1"></label>
+  <div align="center">
+    <input name="t1" type="text" id="t1" size="20" maxlength="10">
+  </div>
+</div>
+<div id="apDiv9">
+  <label for="t2"></label>
+  <div align="center">
+    <input name="t2" type="text" id="t2" size="20" maxlength="4">
+  </div>
+</div>
+<div id="apDiv7">
+<div align="center">
+  <input type=image  src="Images/orange-submit-button-png-i0.png" width="195" height="51" onClick="check();return false;" title="Submit">
+</div>
+
+</div>
+</form>
+<center>
+<table width="1158" height="873" border="0">
+  
+  <tr>
+    <td width="372" height="220"><img src="Images/unnamed.jpg" width="319" height="216"></td>
+    <td colspan="3"><div align="center"><img src="Images/Tata-Docomo-price.jpg" width="770" height="211"></div></td>
+    </tr>
+  <tr>
+    <td height="85" colspan="4"><div align="left"><a href="Home.html"><img src="Images/OTHER_SERVICES.png" width="93" height="78" title="Home"></a></div></td>
+  </tr>
+  <tr>
+    <td height="72" colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="53" colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="258" colspan="4" class="abc">&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="169" colspan="4">&nbsp;</td>
+  </tr>
+  </table>
+</center>
+</body>
+</html>

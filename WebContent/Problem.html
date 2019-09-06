@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Oops. Something Went Wrong.</title>
+<style type="text/css">
+body {
+	background-image: url(Images/backgr1.jpg);
+}
+#apDiv1 {
+	position: absolute;
+	left: 451px;
+	top: 63px;
+	width: 476px;
+	height: 557px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	left: 390px;
+	top: 484px;
+	width: 600px;
+	height: 104px;
+	z-index: 2;
+	font-size: 36px;
+	color: #C00;
+	text-align: center;
+}
+.Fon {
+	font-size: 24px;
+}
+
+</style>
+<script>
+function redirect()
+{
+   window.setTimeout("d()","5000");
+}
+function d()
+{
+    window.location="Home.html";
+}
+</script>
+</head>
+<body onLoad = "redirect()">
+
+<div id="apDiv1"><em><img src="Images/error.gif" width="476" height="408" alt="Problem"></em></div>
+<div id="apDiv2">
+  <p>Something Went Wrong. Redirecting to Home Page In 5 seconds<span class="Fon">...</span></p>
+</div>
+</body>
+</html>

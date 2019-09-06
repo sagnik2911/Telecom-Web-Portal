@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style type="text/css">
+   body {font-size:15px;  }
+   #div1 {
+	position: absolute;
+	left: 930px;
+	top: 431px
+} 	
+   #div2 {
+	position: absolute;
+	left: 262px;
+	top: 313px;
+	text-align: left;
+}
+	#div3 {
+	position : absolute;
+	left: 560px;
+	top: 431px;
+	width: 58px;
+	height: 31px;
+}
+  #div4{
+	position : absolute;
+	left: 262px;
+	top: 267px;
+  }
+  #div5{
+	position : absolute;
+	left: 221px;
+	top: 27px;
+	width: 869px;
+  }
+#apDiv1 {
+	position: absolute;
+	left: 423px;
+	top: 221px;
+	width: 45px;
+	height: 152px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	left: 710px;
+	top: 269px;
+	width: 322px;
+	height: 29px;
+	z-index: 1;
+}
+#apDiv3 {
+	position: absolute;
+	left: 670px;
+	top: 216px;
+	width: 39px;
+	height: 219px;
+	z-index: 2;
+}
+#apDiv4 {
+	position: absolute;
+	left: 22px;
+	top: 180px;
+	width: 186px;
+	height: 371px;
+	z-index: 3;
+}
+#apDiv5 {
+	position: absolute;
+	left: 1105px;
+	top: 26px;
+	width: 216px;
+	height: 517px;
+	z-index: 4;
+}
+#apDiv6 {
+	position: absolute;
+	left: 19px;
+	top: 28px;
+	width: 187px;
+	height: 138px;
+	z-index: 5;
+}
+#apDiv7 {
+	position: absolute;
+	left: 266px;
+	top: 477px;
+	width: 72px;
+	height: 61px;
+	z-index: 6;
+}
+#fapDiv4 {
+	position: absolute;
+	left: 22px;
+	top: 569px;
+	width: 1287px;
+	height: 156px;
+	z-index: 2;
+	background-image: url(Images/footer_background.jpg);
+}
+</style>
+<script>
+function check()
+{
+unm = document.F1.t1.value;
+pwd = document.F1.p1.value;
+if(unm=="")
+	{alert("Enter Username!");document.F1.t1.focus();}
+else if(pwd=="")
+	{alert("Enter Password!");document.F1.p1.focus();}
+else
+    document.F1.submit();
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Login</title>
+</head>
+<body>
+<div id="fapDiv4">
+  <center><p>&nbsp;</p>
+    <p>Tata is a registered trademark of Tata Sons Ltd. The DOCOMO logo is a  trademark of NTT DOCOMO, INC. (Japan) in India.<br>
+      &copy;&nbsp;2015 Tata DOCOMO | Powered by&nbsp;iem<br>
+      Follow us @ facebook and twitter<br>
+      Best 3G mobile phones, 3G data card, 3G services in India from Tata  DOCOMO. Enjoy Tata DOCOMO 3G Services in India with best<br>
+      3G mobile phone and 3G data card.</p>
+  </center>
+</div>
+<div id="apDiv2"><img src="Images/newuser.gif" width="328" height="37">
+<p>First time on our website? Now you can manage everything about your account from here. 
+<p>Its a quick and easy process.All you need to do is register by clicking on the button below.
+</div>
+<div id="apDiv3"><img src="Images/lg_center.gif" width="40" height="334"></div>
+<div id="apDiv4"><img src="Images/ad2.jpg" width="181" height="359"></div>
+<div id="apDiv5"><img src="Images/ad3.jpg" width="199" height="495"></div>
+<div id="apDiv6"><img src="Images/Tata-Docomo-Logo-LMI.jpg" width="185" height="140"></div>
+<div id="apDiv7"><a href="Home.html"><img src="Images/OTHER_SERVICES.png" width="69" height="54" alt="Back to Home" title="Go To Home Page"></a></div>
+<center>
+<br> 
+<br>
+<br>
+
+<form name="F1" method="post" action="Login.jsp">
+  <div id="div2">
+     <table border="0" cellspacing="0" cellpadding="5">
+       <tr >
+	<th> Enter UserID/Mobile Number:</th>
+	<td> <input type="text" name="t1" value=""></td>
+       </tr>
+       <tr>
+	<th align="left">Enter password:</th>
+	<td><input type="password" name="p1" value=""></td>
+       </tr>
+    </table>
+<br>
+
+<br>
+</div>
+<div id = "div3">
+
+<input type="image" src="Images/login.gif" alt="Submit Button" title="Login" onClick="check();return false;"/>
+
+</div>
+<div id="div1">
+ <a href=SignUp.html > <img src="Images/register.gif" alt="Register" title="Register"/></a>
+ </div>
+</form>
+<div id="div4">
+<img src="Images/existinguser.gif" width="322" height="37" alt="Existing User">
+</div>
+<div id="div5">
+<img src="Images/Ad1.jpg" width="858" height="185" alt="Ad1">
+
+</div>
+</body>
+</html>
